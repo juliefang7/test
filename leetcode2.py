@@ -2,7 +2,10 @@
 INPUT: roman numbers
 OUTPUT: the corresponsing integar
 '''
+
 def romanToInt(s):
+    s = 'XXI'
+    print(s)
     i = 0
     mynum = 0
     mydic = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
@@ -22,5 +25,7 @@ def romanToInt(s):
         else:
             mynum += mydic[s[i-1]]
 					
+    print (mynum)
 
-    return mynum 
+romanToInt('XXI')
+    
